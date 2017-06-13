@@ -48,7 +48,6 @@ public class TestClass {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.urlContains("https://ru.pinterest.com/?logged_out=true"));
         Assert.assertEquals("https://ru.pinterest.com/?logged_out=true", driver.getCurrentUrl());
-
     }
 
     @Test
