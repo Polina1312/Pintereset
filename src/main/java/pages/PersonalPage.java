@@ -36,7 +36,7 @@ public class PersonalPage extends BasePage {
         return new MainPage(driver);
     }
 
-    public String addDashBoard(WebDriver driver, String name) {
+    public void addDashBoard(WebDriver driver, String name) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(SAVED));
         Button.clickButton(SAVED, driver);
@@ -44,7 +44,6 @@ public class PersonalPage extends BasePage {
         Button.clickButton(NEW_BOARD, driver);
         TextArea.enterText(BOARD_NAME, driver, name);
         Button.clickButton(SUBMIT_BUTTON, driver);
-        return name;
     }
 
     public void verifyNewBoardName(WebDriver driver, String expectedName) {

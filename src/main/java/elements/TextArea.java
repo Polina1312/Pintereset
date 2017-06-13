@@ -22,9 +22,9 @@ public class TextArea extends Element {
         webElement.sendKeys(submitInformation);
     }
 
-    public static void clearInputField(By by, WebDriver driver){
+    public static void clearInputField(By by, WebDriver driver) {
         WebElement webElement = driver.findElement(by);
-        logger.info("Text area: " + webElement.getText() +" was cleared");
+        logger.info("Text area: " + webElement.getText() + " was cleared");
         webElement.clear();
     }
 

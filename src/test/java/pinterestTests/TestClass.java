@@ -1,4 +1,4 @@
-package printerestSmoke;
+package pinterestTests;
 
 
 import org.openqa.selenium.WebDriver;

@@ -18,6 +18,5 @@ public abstract class Element {
     public Element (WebDriver driver, WebElement webElement) {
         WebDriver driver1 = driver;
         WebElement webElement1 = webElement;
-        System.out.println("web");
     }
 }
